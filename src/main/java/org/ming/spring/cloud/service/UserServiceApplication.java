@@ -20,15 +20,9 @@ public class UserServiceApplication {
         return "Hello, This is Service User";
     }
 
-    @RequestMapping("users")
-    List<User> users() {
-        List<User> users = new ArrayList<>();
 
-        users.add(new User("liming", "伯通 "));
-        users.add(new User("huangrong", "黄容"));
 
-        return users;
-    }
+
 
     public static void main(String[] args) {
         new SpringApplicationBuilder(UserServiceApplication.class).web(true).run(args);
