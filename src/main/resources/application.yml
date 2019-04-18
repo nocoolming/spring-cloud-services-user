@@ -1,6 +1,6 @@
 spring:
   application:
-    name: UserService
+    name: user-service
 
 server:
   port: 7111
@@ -10,6 +10,7 @@ eureka:
     serviceUrl:
       defaultZone: http://eurekaserver:8763/eureka/
   instance:
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
     leaseRenewalIntervalInSeconds: 10
     metadataMap:
-      instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${server.port}}}
+      instanceId: ${spring.cloud.client.ip-address}:${server.port}
