@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # docker image version
-VERSION=1.8
+VERSION=1.9
 
 echo login to aliyun docker registry
 cat password.txt | docker login --username=nocoolming@aliyun.com registry.cn-shanghai.aliyuncs.com --password-stdin
