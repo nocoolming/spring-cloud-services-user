@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # docker image version
-VERSION=1.5
+VERSION=1.6
 
 echo maven packaging
 chmod +x mvnw
