@@ -10,7 +10,7 @@ echo remove docker image on local
 docker rmi registry.cn-shanghai.aliyuncs.com/nocoolming/service-user:$VERSION
 
 echo tag docker image
-docker tag nocoolming/service-user:1.0 registry.cn-shanghai.aliyuncs.com/nocoolming/service-user:$VERSION
+docker tag nocoolming/service-user:$VERSION registry.cn-shanghai.aliyuncs.com/nocoolming/service-user:$VERSION
 
 echo pushing to aliyun docker registry
 docker push registry.cn-shanghai.aliyuncs.com/nocoolming/service-user:$VERSION
