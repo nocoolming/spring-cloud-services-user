@@ -1,19 +1,15 @@
 package org.ming.spring.cloud.service;
 
-import org.ming.model.User;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.ArrayList;
-import java.util.List;
-
 @SpringBootApplication
 @EnableEurekaClient
 @RestController
-public class UserServiceApplication {
+public class Application {
 
     @RequestMapping("/")
     String hello() {
@@ -25,7 +21,7 @@ public class UserServiceApplication {
 
 
     public static void main(String[] args) {
-        new SpringApplicationBuilder(UserServiceApplication.class).web(true).run(args);
+        new SpringApplicationBuilder(Application.class).web(true).run(args);
     }
 
 
