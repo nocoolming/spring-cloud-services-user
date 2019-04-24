@@ -17,7 +17,7 @@ public class UserServiceApplication {
 
     @RequestMapping("/")
     String hello() {
-        return "Hello, This is Service User";
+        return "Hello, This is User Service latest version: 1.5";
     }
 
 
