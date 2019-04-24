@@ -1,0 +1,12 @@
+app.id=service-user
+# set apollo meta server address, adjust to actual address if necessary
+apollo.meta=http://192.168.1.42:8080
+apollo.bootstrap.enabled = true
+
+spring.application.name=userservice
+server.port=7118
+#
+eureka.client.service-url.defaultZone=http://eurekaserver:8763/eureka/
+eureka.instance.prefer-ip-address=true
+eureka.instance.instance-id=${spring.cloud.client.ip-address}:${server.port}
+#
