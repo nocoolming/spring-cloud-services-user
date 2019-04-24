@@ -4,7 +4,7 @@
 VERSION=1.5
 
 echo maven packaging
-chmod +x mvww
+chmod +x mvnw
 ./mvnw -B -DskipTests clean package
 
 echo remove old docker image
