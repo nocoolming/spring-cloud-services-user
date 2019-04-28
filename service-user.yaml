@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
         - name: service-user
-          image: registry.cn-shanghai.aliyuncs.com/nocoolming/service-user:2.2
+          image: registry.cn-shanghai.aliyuncs.com/nocoolming/service-user:2.3
           imagePullPolicy: Always
           ports:
             - containerPort: 7111
