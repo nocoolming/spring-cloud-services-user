@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # docker image version
-VERSION=2.1
+VERSION=2.2
 # project path
 PROJECT_PATH=~/projects/spring-cloud/service-user/
 
