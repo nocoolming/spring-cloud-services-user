@@ -7,4 +7,4 @@ COPY agent /app/agent
 
 ENV JAVA_OPTS="-XX:+UseG1GC"
 
-ENTRYPOINT ["java", " -javaagent:/app/agent/skywalking-agent.jar -jar", "/app/service-user-1.7.jar"]
+ENTRYPOINT ["java", "-javaagent:/app/agent/skywalking-agent.jar","-jar", "/app/service-user-1.7.jar"]
