@@ -11,10 +11,18 @@ spec:
     spec:
       containers:
         - name: service-user
-          image: registry.cn-shanghai.aliyuncs.com/nocoolming/service-user:2.6
+          image: registry.cn-shanghai.aliyuncs.com/nocoolming/service-user:2.7
           imagePullPolicy: Always
           ports:
             - containerPort: 7111
+          volumeMounts:
+            - name: tz-config
+              mountPath: /etc/localtime
+
+      volumes:
+        - name: tz-config
+          hostPath:
+            path: /usr/share/zoneinfo/Asia/Shanghai
 ---
 apiVersion: v1
 kind: Service
