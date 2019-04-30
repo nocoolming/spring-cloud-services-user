@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # docker image version
-VERSION=2.8
+VERSION=2.9
 
 echo maven packaging
 chmod +x mvnw

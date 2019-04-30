@@ -9,4 +9,4 @@ ENV JAVA_OPTS="-XX:+UseG1GC"
 
 RUN echo 'Asia/Shanghai' > /etc/timezone
 
-ENTRYPOINT ["java", "-Duser.timezone=Asia/Shanghai", "-javaagent:/app/agent/skywalking-agent.jar","-jar", "/app/service-user-1.7.jar"]
+ENTRYPOINT ["java", "-Duser.timezone=GMT+08", "-Duser.timezone=Asia/Shanghai", "-javaagent:/app/agent/skywalking-agent.jar","-jar", "/app/service-user-1.7.jar"]
